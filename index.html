@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>廉洁文化园</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+ 
+/* 头部标题 */
+.header {
+  width: 100%;
+  height: 200px;
+  padding: 20px;
+  background-image: url(PICTURE/ha.png),
+  url(PICTURE/1.jpg);
+  background-position: 50% 50%;
+  background-repeat:no-repeat;
+  /*background-size: 1700px;*/
+}
+ 
+.header h1 {
+  font-size: 100px;
+  background-size:100%;
+  background-position:50% 50%;
+  background-repeat: no-repeat;
+  display: grid;
+  
+}
+.header p {font-size: 40px;
+  font-family:'Arial Narrow Bold', sans-serif;
+
+}
+ 
+/* 导航条 */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+ 
+/* 导航条链接 */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ 
+/* 链接颜色修改 */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+ 
+
+ 
+/* 图像部分 */
+.fakeimg {
+  margin: 0 auto;
+  padding: 0%;
+  width: 100%;
+  background-image:url(/WORK/园林设计/HTML/PICTURE/海瑞.png);
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  background-position:50% 50%; 
+  border:5px solid tomato;
+  flex: 1;
+}
+ 
+/* 文章卡片效果 */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+ 
+/* 列后面清除浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ 
+/* 底部 */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+ 
+/*让他妈的海瑞居中*/
+.parent-container {
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  /* 确保父容器有足够的高度和宽度 */
+  height: 500px; /* 例如，设置为视口高度 */
+  width: 100%; /* 例如，设置为视口宽度 */ 
+  display:flex;               
+}
+ 
+/*他妈的海瑞*/
+.img {
+  width: 100vb; /* 设置固定宽度 */
+  height: 100%; /* 设置固定高度 */
+  object-fit: cover; /* 覆盖整个容器，可能会裁剪图片 */
+  /* 可选的值还有contain（保持图片完整，可能有空白区域）、fill（拉伸填满容器）等 */
+  background-image: url('D:/WORK/园林设计/HTML/PICTURE/海瑞.png');
+  background-position: 50% 50%; /* 设置图片位置 */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1></h1> 
+</div>
+
+<div class="topnav">
+  <a href="#">名人名言</a>
+  <a href="#">传统文化</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>海瑞</h2>
+      <h5>至清之臣——海青天</h5>
+      <div class="parent-container">
+        <div class="img"></div>
+      </div>
+      <p style="text-indent: 40px;">
+            海瑞（1514年1月22日—1587年11月13日），字汝贤，号刚峰，海南琼山（今海口市）人。 明朝著名清官。海瑞一生，经历了正德、嘉靖、隆庆、万历四朝。 嘉靖二十八年（1549年）海瑞参加乡试中举，初任福建南平教谕，后升浙江淳安和江西兴国知县，推行清丈、平赋税，并屡平冤假错案，打击贪官污吏，深得民心。历任州判官、户部主事、兵部主事、尚宝丞、两京左右通政、右佥都御史等职。他打击豪强，疏浚河道，修筑水利工程，力主严惩贪官污吏，禁止徇私受贿，并推行一条鞭法，强令贪官污吏退田还民，遂有“海青天”之誉。
+        万历十五年（1587年），海瑞病逝于南京官邸。获赠太子太保，谥号忠介。海瑞去世后，关于他的传说故事，民间广为流传</p>
+      <p style="text-indent: 40px;">
+            按照当时官场的风气，新官到任，旧友高升，总会有人来送些礼品礼金，以示祝贺。这些礼品礼金只要数额不大，也是人之常情。然而海瑞公开贴告示说“今日做了朝廷官，便与家居之私不同”。然后把别人送的礼品一一退还，连老朋友贺邦泰、舒大猷远道送来的礼也不例外。至于公家的便宜，更是一分也不占。海瑞临终前，兵部送来的柴金多算了七钱银子，他也要算清了退回去。</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>航空工程学院学员三大队</h2>
+</div>
+
+</style>
+</body>
+</html>
